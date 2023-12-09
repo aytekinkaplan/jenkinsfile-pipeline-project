@@ -1,11 +1,11 @@
 pipeline{
     agent any
     stages {
-        stage('build'){
+        stage('run'){
             steps{
                 echo "My name is Aytekin Kaplan"
-                echo "I am from world how about you"
-                sh 'echo using shell within Jenkinsfile'
+                sh 'python3 --version'
+                sh 'python3 pipeline.py'
                
             }
         }
